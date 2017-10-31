@@ -1,0 +1,236 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+#post_type_list, #post_type_list_posts{ 
+/* , #submit_animation{ */
+	height: 40px;
+}
+#post_type_list_posts{
+	display: none;
+}
+#show_page{
+	float: left;
+	width: 100%;
+
+}
+#custom_ifram, #iframThemeEditor{
+	width: 100%;
+	height: 100vh;
+}
+.frm_submit{
+	float: right;
+	display: none;
+}
+#frm_submit #submit_animation{
+	height: 40px;
+}
+.active-field{
+	border: 1px solid #E5F1FB;
+}
+.filedset_container{
+	position: fixed;
+	width: 20%;
+	height: 460px;
+	overflow-y: auto;
+	border-radius: 15px;
+	min-width: 350px;
+}
+.field_set_item{
+  
+	float: left;
+}
+.top_lable{
+	margin: auto;
+	margin-top: -20px;
+	height: 20px;
+}
+.field_controllers{
+	border-bottom: 1px solid #E5F1FB;
+	margin: 10px auto;
+}
+.slider_container{
+	margin: 30px auto;
+	text-align: center;
+	float: left;
+}
+.field_set_item [type~=text], .field_set_item select{
+	width: 78%;
+}
+
+.field_set_choose_event, .field_set_choose_attr, .field_set_select_animation, .css-field{
+	float: left;
+	width: 33%;
+}
+.field_set_item {
+    margin-bottom: 8%;
+	width: 50%;
+	text-align: left;
+}
+.clone, .remove{
+    width:50%;
+}
+.add-remove{
+	float: right;
+	margin: -3px 0 0px 0px;
+}
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+#pa_right{
+	direction: ltr;
+}
+#pa_left{
+	direction: ltr;
+}
+/* Style the tab content */
+.tabcontent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.group{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+.span_shortt_text {
+	display: inline-block;
+}
+.shortt_text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip ellipsis;
+    max-width: 34ch;
+    margin: -2px 0;
+}
+
+.slider_horizontal{
+	float: left;
+	width: 65%;
+	margin-top: 3%;
+}
+.slider_vertical{
+	height:90px	;
+	margin: auto;
+}
+.slider_container .field_set_item {
+	width: 100%;
+}
+.field_set_item.field_set_offset .top_lable, .field_set_item.field_set_triggerHook .top_lable{
+	text-align: center;
+}
+.field_set_item.field_set_offset, .field_set_item.field_set_triggerHook {
+	width: 50%;
+	margin-top: 8%;
+}
+.verticals{
+	text-align: center;
+}
+.field_set_item .verticals > input[type="text"]{
+	width: 60%;
+}
+.field_set_item input[type="text"]{
+	width: 30%;
+	text-align: center;
+	margin-left: 2%;
+}
+.frame {
+	padding: 1px 50px 50px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 3px -3px 0px 1px #C0CCCA;
+	min-width: 230px;
+}
+.camera {
+	height: 4px;
+	width: 4px;
+	border-radius: 50%;
+	background: #505251;
+	margin: 23px auto;
+}
+.framesite {
+	width: 900px;
+	height: 450px;
+	max-width: 100%;
+	border-radius: 2px;
+	background: black;
+}
+.base {
+	border-bottom: 60px solid #505251;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	height: 0;width: 100px;
+	margin: 0 auto;
+}
+.foot {
+	width: 200px;
+	height: 20px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0px -5px 0px -1px #97A19F;
+}
+.buttonframe {
+    height: 25px;
+	width: 25px;
+	border: 1px solid grey;
+	border-radius: 50%;
+	margin: 8px auto;
+	display: none;
+}
+@media (max-width: 700px) {
+  .base {
+    display: none;
+  }
+  .foot {
+    display: none;
+  }
+  .button {
+    display: block;
+  }
+  .frame {
+    padding: 1px 40px 3px 40px
+  }
+  .camera {
+    margin: 18px auto;
+  }
+}
+@media (max-width: 500px) {
+  .frame-wrapper {
+      padding: 50px;
+  }
+  .frame {
+    padding: 1px 20px 1px;
+  }
+  .button {
+    margin: 15px auto;
+    height: 35px;
+    width: 35px;
+  }
+  .camera {
+    margin: 23px auto;
+  }
+}
